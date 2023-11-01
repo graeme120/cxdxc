@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Edit with ChatGPT</title>
+    <link rel="styelsheet" href="style.css" />
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div style="display: flex; width: 100%">
+      <!-- ChatGPT section -->
+      <div style="width: 50%; padding: 20px; box-sizing: border-box">
+        <div id="chatbox">
+          <!-- Your chat messages will go here -->
+        </div>
+        <textarea id="userInput"></textarea>
+        <button onclick="sendMessage()">Send</button>
+      </div>
+
+      <!-- Editor section -->
+      <div style="width: 50%; padding: 20px; box-sizing: border-box">
+        <div id="editor" style="height: 300px"></div>
+        <button onclick="saveContent()">Save</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="path_to_your_js_file.js"></script>
+  </body>
+  <script src="textedit.js"></script>
+</html>
